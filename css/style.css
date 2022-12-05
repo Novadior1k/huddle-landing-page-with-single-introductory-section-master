@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/*     
+
+heading // font-family: 'Open Sans', sans-serif; 400 , 600
+
+body // font-family: 'Poppins', sans-serif; 400
+
+*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft_magenta: hsl(300, 69%, 71%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-image: url(/images/bg-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    background-color: var(--violet);
+    height: 100vh;
+    width: 100%;
+    overflow: scroll;
+}
+
+.logo {
+    margin: 2rem 2rem 5rem 2rem;
+    height: 10%;
+}
+
+
+.main {
+    display: flex;
+    margin: 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+.main-img {
+    width: 50%;
+}
+
+.main-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-text {
+    width: 50%;
+    margin: 2rem;
+    color: white;
+    height: 100%;
+}
+
+.main-text h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.main-text p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.main-text button {
+    padding: 1rem 4rem;
+    border-radius: 25px;
+    background-color: white;
+    color: var(--violet);
+    border: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.footer {
+    margin-right: 1rem;
+    margin-top: auto;
+    float: right;
+    position: sticky;
+}
+
+.icons a {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 100%;
+}
+
+.icons a:hover {
+    color: var(--soft_magenta);
+    border: 1px solid var(--soft_magenta);
+}
+
+.main-text button:hover {
+    background-color: var(--soft_magenta);
+    color: white;
+}
+
+@media (max-width: 675px) {
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       margin: 0;
+    }
+}
